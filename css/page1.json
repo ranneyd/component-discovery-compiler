@@ -1,0 +1,30 @@
+{
+    "name": "Page One",
+    "sections": [
+        {
+            "name": "Basic",
+            "sections": [
+                {
+                    "name": "Classics",
+                    "columns": [
+                        {
+                            "name": "Bold",
+                            "content": "<span style='font-weight: bold'>bold</span>",
+                            "note": "Use font-weight:bold"
+                        },
+                        {
+                            "name": "Italics",
+                            "content": "<span style='font-style: italic'>Italics</span>",
+                            "note": "Use font-style: italic"
+                        },
+                        {
+                            "name": "Underline",
+                            "content": "<span style='text-decoration: underline'>Italics</span>",
+                            "note": "Use text-decoration: underline"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

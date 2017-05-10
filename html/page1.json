@@ -1,0 +1,29 @@
+{
+    "name": "Page One",
+    "sections": [
+        {
+            "name": "Basic",
+            "sections": [
+                {
+                    "name": "Classics",
+                    "columns": [
+                        {
+                            "name": "Bold",
+                            "content": "<strong>bold</strong>",
+                            "note": "<b> tag is deprecated. We use the <strong> tag."
+                        },
+                        {
+                            "name": "Italics",
+                            "content": "<em>italics</em>",
+                            "note": "<i> tag is deprecated. We use the <em> tag."
+                        },
+                        {
+                            "name": "Underline",
+                            "content": "<u>italics</u>"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

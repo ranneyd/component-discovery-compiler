@@ -1,7 +1,22 @@
+let fs = require('fs');
+
 let generator = elements => {
-    let output = '<html><head><title>Demo Site</title></head><body>';
+    let output = '';
+    let filename = '';
     for(let elem of elements) {
         switch(elem.type) {
+            case 'page':
+                filename = elem.filename;
+                output = '<html><head><title>Demo Site</title></head><body>';
+                break;
+            case 'endpage':
+                output = '</body></head>';
+                fs.writeFile(`/output/${filename}`, output, err => {
+                    error(`Couldn't write to file '${filename}'. Error: ${err}`);
+                });
+                filename='';
+                output = '';
+                break;
             case 'heading':
                 output += heading(elem);
                 break;
@@ -12,8 +27,6 @@ let generator = elements => {
                 error(`Unknown type: ${elem.type}.`);
         }
     }
-    output += "</body></head>";
-    return output;
 };
 
 /**
@@ -41,10 +54,9 @@ let heading = elem => {
  * property, an array of arrays of examples.
  */
 let columns = elem => {
-    let width = 100 / elem.length;
     let output = '';
     for(let col of elem.cols) {
-        let colHTML = `<div style="width:${width}%; display:inline-block; vertical-align: top">`;
+        let colHTML = `<div style="width:50%; display:inline-block; vertical-align: top">`;
         for(let ex of col) {
             colHTML += example(ex);
         }
@@ -57,16 +69,16 @@ let columns = elem => {
 
 /**
  * Generate an example.
- * @param {Object} elem example object. Should have a "title" property with the title of the example, a "content" prop
+ * @param {Object} elem example object. Should have a "name" property with the name of the example, a "content" prop
  * with the content of the example, and an optional "note" property with a note.
  */
 let example = elem => {
     let output = '';
-    if(elem.title) {
-        output += `<p><strong>${elem.title}</strong></p>`;
+    if(elem.name) {
+        output += `<p><strong>${elem.name}</strong></p>`;
     }
     else {
-        error('Example requires a title.', elem);
+        error('Example requires a name.', elem);
     }
     if(elem.content) {
         output += elem.content;

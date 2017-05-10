@@ -1,0 +1,8 @@
+{
+    "displayName": "HTML",
+    "pageOrder": ["page1", "page2"],
+    "endPages": [{
+        "name": "bing",
+        "href": "www.bing.com"
+    }]
+}

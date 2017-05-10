@@ -7,52 +7,44 @@
                 {
                     "name": "Subsection 1",
                     "columns": [
-                        [
-                            {
-                                "name": "Example 1",
-                                "content": "<input />"
-                            },
-                            {
-                                "name": "Example 3",
-                                "content": "<strong>strong</strong>"
-                            }
-                        ],
-                        [
-                            {
-                                "name": "Example 2",
-                                "content": "<button>Button</button>"
-                            },
-                            {
-                                "name": "Example 4",
-                                "content": "<a href='google.com'>link</a>",
-                                "note": "I'm a note!"
-                            }
-                        ]
+                        {
+                            "name": "Example 1",
+                            "content": "<input />"
+                        },
+                        {
+                            "name": "Example 2",
+                            "content": "<button>Button</button>"
+                        },
+                        {
+                            "name": "Example 3",
+                            "content": "<strong>strong</strong>"
+                        },
+                        {
+                            "name": "Example 4",
+                            "content": "<a href='google.com'>link</a>",
+                            "note": "I'm a note!"
+                        }
                     ]
                 },
                 {
                     "name": "Subsection 2",
                     "columns": [
-                        [
-                            {
-                                "name": "Example 5",
-                                "content": "<p>paragraph</p>"
-                            },
-                            {
-                                "name": "Example 7",
-                                "content": "<h1>h1</h1>"
-                            }
-                        ],
-                        [
-                            {
-                                "name": "Example 6",
-                                "content": "<code>code();</code>"
-                            },
-                            {
-                                "name": "Example 8",
-                                "content": "<em>em</em>"
-                            }
-                        ]
+                        {
+                            "name": "Example 5",
+                            "content": "<p>paragraph</p>"
+                        },
+                        {
+                            "name": "Example 6",
+                            "content": "<code>code();</code>"
+                        },
+                        {
+                            "name": "Example 7",
+                            "content": "<h1>h1</h1>"
+                        },
+                        {
+                            "name": "Example 8",
+                            "content": "<em>em</em>"
+                        }
                     ]
                 }
             ]

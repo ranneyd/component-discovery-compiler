@@ -1,0 +1,8 @@
+{
+    "displayName": "CSS",
+    "pageOrder": ["page1", "page3"],
+    "endPages": [{
+        "name": "google",
+        "href": "www.google.com"
+    }]
+}

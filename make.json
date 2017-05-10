@@ -1,0 +1,6 @@
+{
+    "name": "Demo",
+    "renderDemosWith": "css",
+    "homepage": "home.html",
+    "projects": [ "html", "css" ]
+}
